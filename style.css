@@ -3,6 +3,10 @@ body {
   text-align: center;
 }
 
+.font-size-big{
+  font-size: 40px;
+}
+
 .btn {
   cursor: pointer;
 }
