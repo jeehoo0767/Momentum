@@ -11,7 +11,7 @@ function getWeather(lat, lng){ // lat 위도 lng 경도 날씨정보 가져오�
     .then(function(json){
         const temperature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temperature} @ ${place}`
+        weather.innerText = `섭씨${temperature}도@${place}`
     });
 }
 
