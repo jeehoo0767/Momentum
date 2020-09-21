@@ -30,6 +30,7 @@ function plusDone(event, text) {
     doneBtn.innerText = "DONE";
     span.innerText = text;
     li.appendChild(doneBtn);
+    doneBtn.classList.add("done_btn");
     li.appendChild(span);
     li.id = doneId;
     doneList.appendChild(li); // done 목록 li 생성
@@ -50,6 +51,7 @@ function paintDone(text) {
     doneBtn.innerText = "DONE";
     span.innerText = text;
     li.appendChild(doneBtn);
+    doneBtn.classList.add("done_btn");
     doneBtn.addEventListener("click",deleteDone);
     li.appendChild(span);
     li.id = newId;
@@ -105,7 +107,9 @@ function paintToDo(text) {
     doneBtn.addEventListener("click", plusDone);
     span.innerText = text;
     li.appendChild(doneBtn);
+    doneBtn.classList.add("done_btn");
     li.appendChild(delBtn);
+    delBtn.classList.add("del_btn");
     li.appendChild(span);
     li.id = newId;
     toDoList.appendChild(li);

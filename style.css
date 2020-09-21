@@ -63,6 +63,35 @@ body {
   display: none;
 }
 
+.done_btn{
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.8);
+  color:rgba(0,0,0,0.5);
+  border:none;
+  outline: none;
+  cursor: pointer;
+}
+
+.del_btn{
+  width: 50px;
+  height: 30px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.8);
+  border:none;
+  outline: none;
+  cursor: pointer;
+}
+ul{
+  padding: 0;
+  list-style: none;
+}
+ul li{
+  display:flex;
+  align-items: center;
+  font-size: 30px;
+}
 .js-weather {
   font-size: 30px;
 }
