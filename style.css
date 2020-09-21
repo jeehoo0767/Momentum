@@ -3,7 +3,7 @@ body {
   text-align: center;
 }
 
-.font-size-big{
+.font-size-big {
   font-size: 40px;
 }
 
@@ -15,9 +15,9 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
-#wrap{
+#wrap {
   height: 100%;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -30,7 +30,7 @@ body {
   font-size: 80px;
 }
 
-.js-form{
+.js-form {
   margin-bottom: 30px;
 }
 
@@ -63,7 +63,7 @@ body {
   display: none;
 }
 
-.js-weather{
+.js-weather {
   font-size: 30px;
 }
 
@@ -89,4 +89,34 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+
+@media screen and (max-width: 600px) {
+  .js-form input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+  }
+
+  .js-form input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .js-toDoForm input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+  }
+
+  .js-toDoForm input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .font-size-big {
+    font-size: 20px;
+  }
 }
