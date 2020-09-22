@@ -1,5 +1,5 @@
 const COORDS = 'coords';
-const API_KEY = "e785f87a9692eb0afd33a76d1cffc09b";
+const API_KEY = "e785f87a9692eb0afd33a76d1cffc09b"; //weather api key
 const weather = document.querySelector(".js-weather");
 
 function getWeather(lat, lng){ // lat 위도 lng 경도 날씨정보 가져오기
@@ -28,8 +28,9 @@ function handleGeoSucces(position){
         longitude
     };
     //javascript에서 key명과 value명이 같다면 생략하여 하나만 사용해도 객체 할당
-    saveCoords(coordsObj);
+    saveCoords(coordsObj); //좌표객체를 localstorage에 string형태로 저장
     getWeather(latitude, longitude);
+    //함수 실행 초기에 가져온 위도, 경도를 인자로 getWeather 실행
 }
 
 function handleGeoError(){
@@ -38,6 +39,7 @@ function handleGeoError(){
 
 function askForCoords(){
     navigator.geolocation.getCurrentPosition(handleGeoSucces, handleGeoError);
+    //
 }
 
 function loadCoords(){

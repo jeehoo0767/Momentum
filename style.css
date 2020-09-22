@@ -1,6 +1,16 @@
+/* html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+} */
+
 body {
   background-color: #cfcfcf;
   text-align: center;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .font-size-big {
@@ -11,16 +21,13 @@ body {
   cursor: pointer;
 }
 
-body {
-  color: rgba(255, 255, 255, 0.8);
-}
 
-#wrap {
+/* #wrap {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .clicked {
   color: #7f8c8d;
@@ -40,6 +47,7 @@ body {
   border-bottom: 2px solid rgba(255, 255, 255, 0.8);
   color: rgba(255, 255, 255, 0.8);
   font-size: 40px;
+  outline: none;
 }
 
 .js-form input::placeholder {
@@ -52,6 +60,7 @@ body {
   border-bottom: 2px solid rgba(255, 255, 255, 0.8);
   color: rgba(255, 255, 255, 0.8);
   font-size: 40px;
+  outline: none;
 }
 
 .js-toDoForm input::placeholder {
@@ -111,8 +120,29 @@ ul li{
 }
 
 .bgImage {
+  display: inline-block;
   position: absolute;
   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+.bgImage2 {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+.bgImage3 {
+  display: inline-block;
+  position: absolute;
+  top: 200%;
   left: 0;
   width: 100%;
   height: 100%;
