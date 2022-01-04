@@ -21,7 +21,6 @@ body {
   cursor: pointer;
 }
 
-
 /* #wrap {
   height: 100%;
   display: flex;
@@ -72,33 +71,34 @@ body {
   display: none;
 }
 
-.done_btn{
+.done_btn {
   width: 60px;
   height: 30px;
   border-radius: 30px;
-  background: rgba(255,255,255,0.8);
-  color:rgba(0,0,0,0.5);
-  border:none;
+  background: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
   outline: none;
   cursor: pointer;
 }
 
-.del_btn{
+.del_btn {
   width: 50px;
   height: 30px;
   border-radius: 30px;
-  background: rgba(255,255,255,0.8);
-  border:none;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
   outline: none;
   cursor: pointer;
 }
-ul{
+ul {
   padding: 0;
   list-style: none;
 }
-ul li{
-  display:flex;
+ul li {
+  display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 30px;
 }
 .js-weather {
